@@ -1,0 +1,7 @@
+<button mdbBtn [type]="buttonOptions.type" [color]="buttonOptions.color" [rounded]="buttonOptions.rounded"
+[outline]="buttonOptions.outline" [id]="buttonOptions.id" [disabled]="buttonOptions.disabledBtn"
+[ngClass]="{ 'secondary-btn': buttonOptions.outline === true, 'icon-btn-only': buttonOptions.showiconBtn === true }" [gradient]="buttonOptions.gradient"
+[size]="buttonOptions.size" (click)="buttonAction(buttonOptions.id)" [block]="buttonOptions.block" mdbWavesEffect>
+  <span *ngIf="buttonOptions.showSpinner" class="mr-1" role="status" aria-hidden="true"><em class="fas fa-spinner fa-spin"></em></span>
+  <mdb-icon *ngIf="buttonOptions.showIcon" fas [icon]="buttonOptions.icon" [ngClass]="{'mr-1': !buttonOptions.showiconBtn}"></mdb-icon> <span [ngClass]="{ 'sr-only': buttonOptions.showSpinnerOnly === true }"> {{ buttonOptions.title }} </span>
+</button>

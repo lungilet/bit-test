@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-Regular.ttf');
+    src: url('/fonts/OpenSans-BoldItalic.ttf') format('ttf'),
+         url('/fonts/OpenSans-ExtraBold.ttf') format('ttf'),
+         url('/fonts/OpenSans-Italic.ttf') format('ttf'),
+         url('/fonts/OpenSans-Light.ttf') format('ttf'),
+         url('/fonts/OpenSans-LightItalic.ttf') format('ttf'),
+         url('/fonts/OpenSans-Bold.ttf') format('ttf'),
+         url('/fonts/OpenSans-SemiBold.ttf') format('ttf'),
+         url('/fonts/OpenSans-SemiBoldItalic.ttf') format('ttf');
+          font-weight: normal;
+          font-style: normal;
+}
+
+
+::ng-deep body {
+    font-family: "Open Sans", sans-serif !important;
+}
+
+// Default colors
+$white: #FFFFFF;
+$orange: #CC4100;
+$default: #217D72;
+$hover: #18534C;
+$alt-hover: #862F06;
+$black: #212121;
+$lightgrey: #F5F6F6;
+$darkgrey: #484848;
+$grey: #1E1E1E;
+$success: #28A745;
+$disabled: #bdbdbd;
+$gray:  #757575;
+$googleBg: #4285F4;
+$boxshadow: #00000029;
+$requiredField: #DC3545;
+$separatorDivider: #CFCFCF;
+
+// Font Size
+$default-font-size: 14px;
+
+// Borders
+$btn-outline-border: 1px solid $white;
+$checkedStateborder:  2px solid $default;
+$input-border: 1px solid $default;
+$input-default-border: 1px solid $black;
+$input-disabled: 1px solid $disabled;
+$default-btn-outline: 1px solid $black;
+$success-border: 1px solid $success;
+
+// Box Shadows
+$btn-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.6), 0 2px 10px 0 rgba(0, 0, 0, 0.6);
+$input-shadow: 0 1px 0 0 $default;
+$success-shadow: 0 1px 0 0 $success;
+
+// Border Radius
+$border-radius: 0px 0px 3px 3px;
+
+// Spacing around Cards/Elements
+$padding-margin: 20px;
+
+
+// Login Screen
+$login-border: 1px solid $white;
+$login-bg: $white 0% 0% no-repeat padding-box;
+$card-shadows: 0px 3px 6px $boxshadow;
+
+// Assign color variables to Entity: this will be more helpful when we doing Theming
+$clear-button-bg: $white;
+$focus-btn-bg: $lightgrey;
+$secondary-focus-btn-border-color: $default;
+
+// Dark Theme
+$dark-bg: $black;
+$dark-hover-btn-bg: $darkgrey;
+$color: $white;
+
+
+// Dark Theme
+$dark-focus-btn-border: 1.5px solid $white;
+$dark-border-light: 1.5px solid $darkgrey;

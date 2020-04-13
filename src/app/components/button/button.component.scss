@@ -1,0 +1,97 @@
+@import 'variables';
+
+// Primary/Default Button
+
+.btn-default, .btn-outline-default,
+.btn-outline-default:not([disabled]):not(.disabled):active{
+  background-color: $default !important;
+  color: $white !important;
+}
+
+button#login-btn,
+button#google-btn {
+  width: 100%;
+}
+
+.btn-outline-default,
+.btn-outline-default#btn-alternative{
+  border: $btn-outline-border !important;
+  outline: $default-btn-outline;
+}
+
+.btn-default:focus, .btn-outline-default.active:focus,
+.btn-outline-default:not([disabled]):not(.disabled).active,
+.btn-outline-default:active, .btn-outline-default:not([disabled]):not(.disabled):active{
+  border: $btn-outline-border !important;
+  background-color: $default !important;
+  color: $white !important;
+  outline: $default-btn-outline;
+}
+
+.btn-default:hover, .btn-outline-default:hover, #primary-btn-hover-id {
+  background-color: $hover !important;
+  color: $white !important;
+  border: none !important;
+}
+
+.btn-default#google-btn {
+  background-color: $googleBg !important;
+}
+
+// Secondary Button
+.secondary-btn {
+  background-color: $clear-button-bg !important;
+  color: $black !important;
+  border: $btn-outline-border !important;
+}
+
+.secondary-btn:focus, #sec-focus-btn,
+.btn-outline-secondary:focus,
+.btn-outline-secondary:not([disabled]):not(.disabled):active {
+  background-color: $focus-btn-bg !important;
+  color: $black !important;
+  border: $btn-outline-border !important;
+  outline: 1px solid $default !important;
+}
+
+.secondary-btn:hover,
+.btn-outline-secondary:hover,
+#sec-hover-btn {
+  background-color: $focus-btn-bg !important;
+  color: $black !important;
+  border: $btn-outline-border !important;
+  box-shadow: $btn-box-shadow !important;
+}
+
+
+//  Alternative Buttons
+#btn-alternative{
+  background-color: $orange !important;
+}
+
+#alternative-hover, #btn-alternative:hover {
+  background-color: $alt-hover !important;
+}
+
+//  For Dark Theme
+#btn-dark {
+  background-color: $dark-bg !important;
+}
+
+.btn-outline-default#btn-dark,
+#btn-dark:focus, #dark-hover:focus{
+  border: $dark-focus-btn-border !important;
+  color: $white !important;
+}
+
+#dark-hover, #btn-dark:hover{
+  background-color: $dark-hover-btn-bg !important;
+}
+
+.disabled {
+  cursor: not-allowed !important;
+}
+
+.icon-btn-only {
+  padding: 10px 15px;
+}
